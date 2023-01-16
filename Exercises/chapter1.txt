@@ -1,0 +1,52 @@
+1.1-1
+
+Everyday, I sort the tasks that I need to complete in order of which need to be completed most urgently. Urgency is determined by the deadline that the task has to be completed, so tasks due tomorrow have a higher urgency than tasks due a week from tomorrow. After the sorting is finished, I begin working on the highest urgency task. 
+
+One thing I do everyday (or nearly everday) that requires finding the shortest distance between two points is driving from my home to my office or my home to the gym. I find the shortest route and proceed to take that route. 
+
+
+1.1-2
+
+Other significant measures of efficiency one might consider when designing an algorithm beside speed is space. I think its fair to say that the two biggest limiting factors of a computer are the speed with which it can process data and the amount of data it can process. Other efficiency measures could be the accuracy of the answer produced by a particular algorithm. 
+
+
+1.1-3
+
+One data structure that comes to mind is a linked list, where you have a multiple nodes, and each node is pointing to the next node in the list, and the last node is pointing to nothing (or a null node). One strength is that order can be preserved between nodes and a weakness is that the list has to be traversed in order to find an element, meaning elements can be accessed in constant time. 
+
+
+1.1-4
+
+Shortest path and traveling salesperson problem are similar because both can be found using a brute-force approach, but there exist other ways of finding shortest path solutions that are faster and gaurantee the shortest answer, while TSP has ways of approximating and speeding up computation time but does not gaurantee the correct answer. 
+
+
+1.1-5 
+
+An approximate solution to a problem that would be acceptable would be TSP problem, where a company has to deliver a certain number of packages to a certain number of houses in the area. Having an approximate solution may be enough to minimize their cost of deliveries enough, without spending frivilous amounts of resources on computing a perfect answer. 
+
+An exact answer may be needed for calculating commission payroll for employees, assuming those employees are gauranteed a certain amount of money for each unit of goods/services sold. 
+
+
+1.1-6
+
+An example where the entire input is available before you solve the problem would be an algorithm that sorts a given number of files from one computer into catgeorized files. 
+
+An example where the entire input is not available at the start of the problem, and arrives over time would be an algorithm that sorts through stock prices during trading days and displays the stocks with highest and lowest returns.  
+1.2-1
+
+An example of an algorithm that requires algorithmic content at the application level would be computer opponent for a tic-tac-toe game, utilizing a minimax algorithm to always beat or tie its opponent. 
+
+
+1.2-2
+
+Insertion sort= 8n^2 
+Merge Sort = 64n log2(n) 
+Insertion sort beats merge sort when 8n^2 <= 64n log2(n), or when is smaller than 43 inputs. 
+
+
+1.2-3
+
+Algorithm 1 (slow) = 100n^2 
+Algorithm 2 (fast) = 2^n 
+
+Algorithm 1 beats Algorithm 2 for all n such that 100n^2 <= 2^n, or for inputs that are smaller than 15. (rounded up) 
