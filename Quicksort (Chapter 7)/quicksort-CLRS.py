@@ -19,7 +19,6 @@ PARTITION(A, p, r)
             exchange A[i] with A[j]     // put this element there
     exchange A[i + 1] with A[r]         // pivot goes just to the right of the low side
     return i + 1                        // new index of the pivot
-
 '''
 
 import random
@@ -33,42 +32,35 @@ def exchange (array, i, j):
 
 
 def partition (array, p, r):
-    # string = f'p:{p} r:{r} {array} '
-    x = array[r - 1] 
+    string = f'Array: {array[p:r]} p:{p} r:{r} {array} '
+    x = array[r] 
     i = p - 1 
-    for j in range(p, r - 1):
+    for j in range(p, r):
         if (array[j] <= x):
             i = i + 1
             exchange(array, i, j) 
-    exchange(array, i + 1, r - 1)
-    # string += f'--> ${array}' ; print(string)
+    exchange(array, i + 1, r)
+    string += f'--> {array} and q = {i + 1}\n' ; print(string)
+    pivot = array[i + 1] 
     return i + 1 
 
 
 def quicksort(array, p, r):
-    
+    print(f'Call to quicksort with p:{p}, r:{r}')
+
     if (p < r):
         q = partition(array, p, r) 
+        print("First Quicksort Call ", end=" ")
         quicksort(array, p, q - 1)
+        print("Second Quicksort Call ", end=" ")
         quicksort(array, q + 1, r)
+    else : 
+        print("returning\n")
 
 
-# example_array = [2, 8, 7, 1, 3, 5, 6, 4] 
+example_array = [2, 8, 7, 1, 3, 5, 6, 4] 
 
-# print(example_array)
-# quicksort(example_array, 0, len(example_array)) 
-# print(example_array)
+print("\n", example_array, "\n")
+quicksort(example_array, 0, len(example_array) - 1) 
+print("\n", example_array, "\n")
 
-random.seed() 
-hold_numbers = []
-
-for i in range(1000000):
-    hold_numbers.append(random.randint(0, 100000000))
-
-def quicksort_wrapper () :
-    quicksort(hold_numbers, 0, len(hold_numbers))
- 
-
-elapsed_time = timeit.timeit(quicksort_wrapper, number=10)
-
-print(elapsed_time)
