@@ -1,0 +1,16 @@
+Hashing with Chaining 
+==================================
+
+1. Implement Hash Tables with Chaining
+
+
+Hashing Functions 
+==================================
+
+1. Implement Divison Method
+
+2. Multiplication Method
+
+3. Universal Method 
+
+
