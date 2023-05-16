@@ -37,4 +37,4 @@ heap = HeapObject()
 for i in array:
     heap.push_to_heap(i)
 
-print(heap.heap[heap.parent(5)])
+# print(heap.heap[heap.parent(5)])
