@@ -10,9 +10,9 @@ def Build_Max_Heap (A, n) :
 
 array = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
 heap = HeapObject(array)
-print(heap.heap)
+# print(heap.heap)
 Build_Max_Heap(heap, len(heap.heap))
-print(heap.heap)
+# print(heap.heap)
 
 
 

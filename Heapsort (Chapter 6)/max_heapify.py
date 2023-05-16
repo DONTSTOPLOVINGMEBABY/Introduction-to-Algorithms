@@ -46,4 +46,4 @@ def Max_Heapify(HeapObject, i):
 heap_array = [16, 4, 10, 14, 7, 9, 3, 2, 8, 1]
 heap = HeapObject(heap_array)
 Max_Heapify(heap, 2)
-# print(heap.heap)
+print(heap.heap)
