@@ -16,7 +16,7 @@ Methods included in JS Linked Lists:
 - `contains(node)` takes a piece of data as input and returns true if an object in the list contains that piece of data or returns false if not such data is found. 
 - `pretty_print()` prints the list in the format "(node 1) --> (node 2) ... (node n) --> null"
 
-The `Node (data)` Object has two attributes: data and next while the `Linked_List ()` object has one attribute: head. 
+<!-- The `Node (data)` Object has two attributes: data and next while the `Linked_List ()` object has one attribute: head. 
 
 ## Doubly-Linked List in Python
 The Doubly-Linked List is written in Python and implements the `prepend(node)`, `append(node)`, `search(node)`, and `delete(node)` methods which are identical in functionality to the ones listed above. The `Class Node` object has three attributes: `Node.next`, `Node.prev`, `Node.data`. Since we are working with a doubly Linked List, the ".prev" attribute is used to keep track of the element behind a given node. 
@@ -29,4 +29,4 @@ The main difference between these two data-structures is that the Doubly-Linked-
 ##### References 
 I used the Psuedocode from <em>Introduction to Algorithms</em> by <em>Cormen et al.</em> located on page 261. It can be found here ==> [Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X/ref=sr_1_1?keywords=introduction+to+algorithms&qid=1673722953&sprefix=introduction+to+a%2Caps%2C123&sr=8-1) . 
 
-Many of the methods added to the <Linked_List> object in <em>singly-linked-list.js</em> were taken from this [Lesson on Linked Lists by The Odin Project]("https://www.theodinproject.com/lessons/javascript-linked-lists") 
+Many of the methods added to the <Linked_List> object in <em>singly-linked-list.js</em> were taken from this [Lesson on Linked Lists by The Odin Project]("https://www.theodinproject.com/lessons/javascript-linked-lists")  -->
